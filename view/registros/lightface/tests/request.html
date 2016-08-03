@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Request LightFace Test</title>
+	<style>
+		@import "../Assets/LightFace.css";
+	</style>
+	<link rel="stylesheet" href="../Assets/lightface.css" />
+	<script src="mootools.js"></script>
+
+	
+	<script type="text/javascript" src="mootools-more-drag.js"></script>
+
+	<script src="../Source/LightFace.js"></script>
+	<script src="../Source/LightFace.Request.js"></script>
+	<script>
+		window.addEvent('domready',function(){
+			
+			document.id('sub').addEvent('click',function(){
+				
+				ajaxFace = new LightFace.Request({
+					url: 'ajax.php',
+					buttons: [
+						{ title: 'Submitter', event: function() { alert('hi!'); }, color: 'blue' },
+						{ title: 'Canceler', event: function() { this.close(); } }
+					],
+					request: { 
+						data: { 
+							name: document.id('personName').value || 'PersonWhoIsTooCoolToGiveTheirName',
+							ape:document.id('apellido').value || 'PersonWhoIsTooCoolToGiveTheirLastName'
+						},
+						method: 'post'
+					},
+					title: 'Asignación de permisos'
+				}).open();
+				
+			});
+			
+		});
+	</script>
+</head>
+<body>
+	
+	<h3>AJAX Test</h3>
+    
+	<p>Your name:  <input type="text" id="personName" class="input box" />
+    <input type="text" id="apellido" class="input box">
+     <input type="button" value="Submit!" id="sub" class="submit" /></p>
+   
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* CSS Document */
+body{
+	font:normal 12px Tahoma, Geneva, sans-serif
+}
+title{font:normal 12px Tahoma, Geneva, sans-serif
+	}
+#content{
+	width:auto;
+	height:auto;
+	margin:2
+}
+#content legend{
+	font:bold 25px Arial, Helvetica, sans-serif;
+	color:#000;
+}
+#table{
+	width:96%;
+	margin:20px auto 0 auto
+}
+#table td{
+	padding:10px
+}
+#table .head{
+	background:#CCC;
+	color:#FFF;
+}
+#table .head th{
+	padding:10px
+	background:#FFF;
+}
+
+#form{
+	padding:0 0 0 20px 
+}
+#form .frm{
+	display:none
+}
+
+
+

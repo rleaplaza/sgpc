@@ -1,0 +1,110 @@
+/* Estilos Base */
+*{
+    color: #262626;
+    font: 12px sans-serif;
+}
+body {
+    background: #F4F4F4;
+}
+/* Estilos del formulario */
+form.usuario{
+    margin: 25px auto 0;
+    width: 700px;
+	alignment-adjust:central;
+}
+form.usuario fieldset {
+    background: white;
+    border: 1px solid #E1E1E1;
+    box-shadow: 0 0 10px #DADADA;
+    -webkit-box-shadow: 0 0 10px #DADADA;
+    -moz-box-shadow: 0 0 10px #DADADA;
+    padding: 25px;
+}
+form.usuario fieldset > div {
+    clear: both;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+form.usuario fieldset div label {
+    display: block;
+    float: left;
+    margin-right: 15px;
+    margin-top: 5px;
+    text-align: right;
+    text-transform: uppercase;
+    width: 84px;
+}
+form.usuario input[type="text"], form.usuario textarea {
+    background: #F5F5F5;
+    border: 1px solid #E8E8E8;
+    color: #626262;
+    display: block;
+    float: left;
+    padding: 8px;
+    resize: none;
+    width: 265px;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+}
+form.usuario input[type="text"]:focus, form.usuario textarea:focus {
+    background: #CCC;
+    border: 1px solid #D3D3D3;
+    outline: none;
+}
+form.usuario input[type="password"]:focus, form.usuario textarea:focus {
+    background: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    outline: none;
+}
+form.usuario select:focus, form.usuario{
+    background: #F9F9F9;
+    border: 1px solid #D3D3D3;
+    outline: none;
+}
+form.usuario .ultimo{
+    margin-bottom: 0;
+    position: relative
+}
+form.usuario button {
+    background: #444444;
+    border: 0 none;
+    color: #FFFFFF;
+    float: right;
+    font-weight: bold;
+    height: 32px;
+    padding: 0 10px;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+}
+form.usuario button:hover{
+    background: #6A6A6A;
+}
+ 
+/* AJAX Gif y mensajes de exito o fracaso */
+.hide{
+    display: none;
+}
+.ajaxgif{
+	position: absolute;
+	right: -41px;
+	top: 10px;
+}
+.msg{
+    color: white;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    position: absolute;
+    right: -155px;
+    text-transform: uppercase;
+    min-width: 121px;
+}
+.msg_ok{
+    background: #589D05;
+}
+.msg_error{
+    background: red;
+}

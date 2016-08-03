@@ -1,0 +1,13 @@
+.combo{
+	background:#CCC;
+	background-position:left;
+	border:0;
+	border-radius:3px;
+	-webkit-appearance:none;
+	-webkit-transition: all 0.4s;
+	-moz-transition:all 0.4s;
+	-webkit-bos-shadow: 0 1px rgba(0,0,0,0.3);
+	}
+.combo:hover{
+	background-color:#ddd;
+	}

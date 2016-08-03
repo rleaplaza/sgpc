@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
+ <style>
+  label{ font:Verdana, Geneva, sans-serif;
+		 color:#00C;
+	    }
+legend{font:Verdana, Geneva, sans-serif;
+	   color:#009;
+	   size:auto;
+ }
+</style>
+ <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+ <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-1.9.2.tabs.custom.min.js" type="text/javascript"></script>
+</head>
+
+<body style="text-align:justify">
+<img src="images/logo.png" width="320" height="70"  alt=""/>
+<div id="Tabs1">
+  <ul>
+    <li><a href="#tabs-1">NOSOTROS</a></li>
+    <li><a href="#tabs-2">MISIÓN</a></li>
+    <li><a href="#tabs-3">VISIÓN</a></li>
+    <li><a href="#tabs-4">CONTACTOS</a></li>
+    <li><a href="#tabs-5">COPYRIGHT</a></li>
+  </ul>
+  <div id="tabs-1">
+   <img src="images/obras/obra1.jpg" height="40" width="40"/> <p>La empresa de SERVICIOS Y CONSTRUCCIONES SRL es una constructora con experiencia, calidad y prestigio.
+Diseñamos, gestionamos y construimos obras civiles de carreteras, de manera profesional con transparencia, puntualidad, formalidad y compromiso.<br>
+Nuestro personal ha ido cuidadosamente mejorando sus conocimientos técnicos y adquiriendo la experiencia necesaria para ofrecer alternativas de construcciones.</p>
+  </div>
+  <div id="tabs-2">
+   <img src="images/obras/obra2.jpg" height="40" width="40"/> <p>Ser una empresa constructora dedicada a diseñar, gestionar y construir proyectos de obras civiles de forma profesional para el área profesional e industrial</p>
+  </div>
+  <div id="tabs-3">
+   <img src="images/obras/obra3.jpg" height="40" width="40"/> <p>Ser una empresa competente y flexible reconocida por brindar soluciones integrales de rubro de la construcción en nuestro país
+</p>
+  </div>
+  <div id="tabs-4">
+  <img src="images/obras/obra4.jpg" height="40" width="40"/><p>Daniel Escobari
+Calle Capitán Ravelo 2445
+Tel. 591-2-2441845 OFC
+Cel: 591 71025088</p>
+  </div>
+ 
+    <div id="tabs-5">
+     <img src="images/web.jpg" height="50" width="50">
+  <p>Sitio web Desarrollado por: RODRIGO IVÁN LEA PLAZA CHÁVEZ<br>
+  Email: rleaplazach@gmail.com - rleaplazachavez@hotmail.com - rleaplazach@yahoo.com<br>
+  Teléfonos: 70565725<br>
+  Copyright 2014-2015</p>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
